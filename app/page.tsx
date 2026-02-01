@@ -1,24 +1,17 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
-import TrustBar from "@/components/sections/TrustBar";
-import PainPoints from "@/components/sections/PainPoints";
-import FeatureGrid from "@/components/sections/FeatureGrid";
-import AttackPlan from "@/components/sections/AttackPlan";
-import TradiesPositioning from "@/components/sections/TradiesPositioning";
-import FlowPreview from "@/components/sections/FlowPreview";
-import Integrations from "@/components/sections/Integrations";
-import PricingTable from "@/components/sections/PricingTable";
-import FAQAccordion from "@/components/sections/FAQAccordion";
 import FinalCTA from "@/components/sections/FinalCTA";
+import Section from "@/components/ui/Section";
+import Container from "@/components/ui/Container";
 
 export const metadata: Metadata = {
-  title: "LeadWing AI | AI Chatbots for Tradies",
+  title: "LeadWing | AI Chatbots for Tradies",
   description:
-    "Capture, qualify, and convert leads automatically with LeadWing AI — built for Australian tradies.",
+    "AI chatbots that help trades and service businesses capture, qualify, and convert leads automatically.",
   openGraph: {
-    title: "LeadWing AI",
+    title: "LeadWing",
     description:
-      "Never lose another lead. AI chatbots for plumbers and service businesses.",
+      "Never lose another lead. AI chatbots for trades and service businesses.",
     type: "website"
   }
 };
@@ -27,15 +20,34 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TrustBar />
-      <PainPoints />
-      <FeatureGrid />
-      <AttackPlan />
-      <TradiesPositioning />
-      <FlowPreview />
-      <Integrations />
-      <PricingTable />
-      <FAQAccordion />
+      <Section className="bg-white/80">
+        <Container className="grid gap-8 md:grid-cols-3">
+          <div className="rounded-3xl border border-brandBlue/10 bg-white p-6 shadow-sm shadow-brandBlue/10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
+              Problem
+            </p>
+            <h2 className="mt-3 text-xl font-bold text-ink">
+              Spending hours chasing leads and missing opportunities.
+            </h2>
+          </div>
+          <div className="rounded-3xl border border-brandGreen/10 bg-white p-6 shadow-sm shadow-brandGreen/10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
+              Solution
+            </p>
+            <h2 className="mt-3 text-xl font-bold text-ink">
+              LeadWing captures and qualifies leads automatically.
+            </h2>
+          </div>
+          <div className="rounded-3xl border border-brandOrange/10 bg-white p-6 shadow-sm shadow-brandOrange/10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
+              Result
+            </p>
+            <h2 className="mt-3 text-xl font-bold text-ink">
+              More booked jobs, less admin, happier clients.
+            </h2>
+          </div>
+        </Container>
+      </Section>
       <FinalCTA />
     </>
   );

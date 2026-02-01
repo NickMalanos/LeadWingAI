@@ -5,11 +5,11 @@ import Footer from "@/components/layout/Footer";
 import AnalyticsPlaceholder from "@/components/metrics/AnalyticsPlaceholder";
 
 export const metadata: Metadata = {
-  title: "LeadWing AI | AI Chatbots for Tradies",
+  title: "LeadWing | AI Chatbots for Tradies",
   description:
     "LeadWing provides AI chatbots that help trades and service businesses capture, qualify, and convert leads automatically.",
   openGraph: {
-    title: "LeadWing AI",
+    title: "LeadWing",
     description:
       "AI chatbots for Australian tradies to capture leads, book jobs, and answer FAQs 24/7.",
     type: "website",
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-gradient-to-br from-brandBlue/15 via-white to-brandGreen/15">
         <Header />
         <main>{children}</main>
         <Footer />

@@ -2,22 +2,18 @@ import Link from "next/link";
 import Container from "@/components/ui/Container";
 
 const footerLinks = [
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Industries", href: "/industries" },
-  { label: "Demo", href: "/demo" },
-  { label: "Case Studies", href: "/case-studies" },
-  { label: "Contact", href: "/contact" },
-  { label: "Privacy", href: "/privacy" }
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-us" }
 ];
 
 export default function Footer() {
   return (
-    <footer className="border-t border-steel/10 bg-white">
+    <footer className="border-t border-steel/10 bg-white/90">
       <Container className="grid gap-6 py-10 md:grid-cols-[1.2fr_1fr]">
         <div className="space-y-3">
-          <p className="text-lg font-extrabold">LeadWing AI</p>
+          <p className="text-lg font-extrabold text-ink">LeadWing</p>
           <p className="text-sm text-slate">
-            AI chatbots that help Australian tradies capture, qualify, and
+            AI chatbots that help trades and service businesses capture and
             convert leads automatically.
           </p>
           <p className="text-xs text-slate">

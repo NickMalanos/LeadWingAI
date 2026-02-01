@@ -5,10 +5,10 @@ type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const styles: Record<ButtonVariant, string> = {
   primary:
-    "bg-ink text-white hover:bg-slate border border-ink shadow-sm",
+    "bg-brandBlue text-white hover:bg-brandBlue/90 border border-brandBlue shadow-sm",
   secondary:
-    "bg-white text-ink border border-ink hover:bg-mist shadow-sm",
-  ghost: "text-ink hover:text-slate"
+    "bg-white text-brandBlue border border-brandBlue/30 hover:bg-mist shadow-sm",
+  ghost: "text-brandBlue hover:text-brandBlue/80"
 };
 
 type ButtonProps = {

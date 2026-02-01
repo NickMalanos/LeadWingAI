@@ -13,9 +13,9 @@ const config: Config = {
         slate: "#0F172A",
         steel: "#1E293B",
         mist: "#F8FAFC",
-        sun: "#FBBF24",
-        ocean: "#2563EB",
-        emerald: "#10B981"
+        brandBlue: "#1F5AA6",
+        brandGreen: "#2FA24A",
+        brandOrange: "#F39B2D"
       }
     }
   },
