@@ -24,7 +24,8 @@ export default function AboutUsPage() {
             About Us
           </p>
           <h1 className="text-4xl font-extrabold text-ink md:text-5xl">
-            Our mission is simple.
+            Our mission is{" "}
+            <span className="text-brandBlue">simple</span>.
           </h1>
           <div className="max-w-2xl space-y-4 text-lg text-slate">
             <p>

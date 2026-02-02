@@ -19,7 +19,7 @@ export default function FinalCTA() {
         </div>
         <div className="flex flex-wrap gap-4">
           <Button
-            href="/#book"
+            href="/free-trial"
             className="bg-brandOrange text-ink hover:bg-brandOrange/90 border border-brandOrange"
           >
             Book a Free Trial

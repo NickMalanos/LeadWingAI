@@ -10,8 +10,9 @@ export default function Hero() {
           <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
             Never Lose Another Lead
           </p>
-          <h1 className="text-balance text-4xl font-extrabold leading-tight md:text-5xl">
-            Capture every enquiry and book more jobs.
+          <h1 className="text-balance text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
+            Capture every enquiry and{" "}
+            <span className="text-brandBlue">book more jobs</span>.
           </h1>
           <p className="text-balance text-lg text-slate">
             LeadWing provides AI chatbots that help trades and service

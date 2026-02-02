@@ -18,7 +18,7 @@ export default function Header() {
         </Link>
         <div className="hidden md:flex" />
         <div className="flex items-center gap-3">
-          <Button href="/#book">Book a Free Trial</Button>
+          <Button href="/free-trial">Book a Free Trial</Button>
         </div>
       </Container>
     </header>

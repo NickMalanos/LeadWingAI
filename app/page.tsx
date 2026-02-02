@@ -23,6 +23,7 @@ export default function HomePage() {
       <Section className="bg-white/80">
         <Container className="grid gap-8 md:grid-cols-3">
           <div className="rounded-3xl border border-brandBlue/10 bg-white p-6 shadow-sm shadow-brandBlue/10">
+            <div className="h-1 w-10 rounded-full bg-brandBlue" />
             <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
               Problem
             </p>
@@ -31,6 +32,7 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="rounded-3xl border border-brandGreen/10 bg-white p-6 shadow-sm shadow-brandGreen/10">
+            <div className="h-1 w-10 rounded-full bg-brandGreen" />
             <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
               Solution
             </p>
@@ -39,6 +41,7 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="rounded-3xl border border-brandOrange/10 bg-white p-6 shadow-sm shadow-brandOrange/10">
+            <div className="h-1 w-10 rounded-full bg-brandOrange" />
             <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
               Result
             </p>

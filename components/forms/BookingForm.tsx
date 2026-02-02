@@ -4,7 +4,6 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import {
   FormErrors,
-  mockSubmit,
   validateEmail,
   validatePhone,
   validateRequired
@@ -45,6 +44,8 @@ export default function BookingForm() {
   const [errors, setErrors] = useState<FormErrors<BookingValues>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [botField, setBotField] = useState("");
 
   const handleChange = (key: keyof BookingValues, value: string) => {
     setValues((prev) => ({ ...prev, [key]: value }));
@@ -52,6 +53,13 @@ export default function BookingForm() {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setErrorMessage("");
+
+    if (botField.trim()) {
+      setSubmitted(true);
+      return;
+    }
+
     const nextErrors: FormErrors<BookingValues> = {
       name: validateRequired(values.name),
       business: validateRequired(values.business),
@@ -69,21 +77,37 @@ export default function BookingForm() {
     }
 
     setSubmitting(true);
-    await mockSubmit(values);
-    setSubmitting(false);
-    setSubmitted(true);
+    try {
+      const response = await fetch("/api/free-trial", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values)
+      });
+
+      if (!response.ok) {
+        const payload = await response.json().catch(() => ({}));
+        setErrorMessage(
+          payload?.error || "Something went wrong. Please try again."
+        );
+        return;
+      }
+
+      setSubmitted(true);
+    } catch (error) {
+      setErrorMessage("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
     return (
       <div className="rounded-2xl border border-emerald/30 bg-emerald/10 p-6">
         <p className="text-lg font-semibold text-emerald-900">
-          Demo booked. You’re all set.
+          Free trial request received.
         </p>
         <p className="mt-2 text-sm text-emerald-900/80">
-          What happens next: we’ll email you within one business day to lock in
-          a time, review your current lead flow, and map a custom bot for your
-          trade.
+          We will email you within one business day to confirm next steps.
         </p>
       </div>
     );
@@ -91,6 +115,15 @@ export default function BookingForm() {
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-4">
+      <label className="hidden">
+        Company
+        <input
+          value={botField}
+          onChange={(event) => setBotField(event.target.value)}
+          autoComplete="off"
+          tabIndex={-1}
+        />
+      </label>
       <div className="grid gap-4 md:grid-cols-2">
         <label className="grid gap-2 text-sm font-semibold text-slate">
           Full name*
@@ -194,13 +227,14 @@ export default function BookingForm() {
           <span className="text-xs text-red-600">{errors.message}</span>
         )}
       </label>
+      {errorMessage && (
+        <p className="text-sm font-semibold text-red-600">{errorMessage}</p>
+      )}
       <div className="flex items-center gap-3">
         <Button type="submit" className="bg-ink text-white">
-          {submitting ? "Booking..." : "Book Free Demo"}
+          {submitting ? "Booking..." : "Book a Free Trial"}
         </Button>
-        <span className="text-xs text-slate">
-          Or DM “DEMO” on social for a quick response.
-        </span>
+        <span className="text-xs text-slate">We will email you to confirm.</span>
       </div>
     </form>
   );
