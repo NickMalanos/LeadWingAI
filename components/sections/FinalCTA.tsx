@@ -22,7 +22,7 @@ export default function FinalCTA() {
             href="/free-trial"
             className="bg-brandOrange text-ink hover:bg-brandOrange/90 border border-brandOrange"
           >
-            Book a Free Trial
+            Book a Free Discovery Call
           </Button>
         </div>
       </Container>
