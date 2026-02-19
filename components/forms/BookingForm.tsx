@@ -104,10 +104,10 @@ export default function BookingForm() {
     return (
       <div className="rounded-2xl border border-emerald/30 bg-emerald/10 p-6">
         <p className="text-lg font-semibold text-emerald-900">
-          Free trial request received.
+          Discovery call request received.
         </p>
         <p className="mt-2 text-sm text-emerald-900/80">
-          We will email you within one business day to confirm next steps.
+          We will be in touch within one business day.
         </p>
       </div>
     );
@@ -232,9 +232,8 @@ export default function BookingForm() {
       )}
       <div className="flex items-center gap-3">
         <Button type="submit" className="bg-ink text-white">
-          {submitting ? "Booking..." : "Book a Free Trial"}
+          {submitting ? "Booking..." : "Confirm Booking"}
         </Button>
-        <span className="text-xs text-slate">We will email you to confirm.</span>
       </div>
     </form>
   );

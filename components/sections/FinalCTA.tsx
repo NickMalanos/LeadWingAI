@@ -11,7 +11,7 @@ export default function FinalCTA() {
             Ready to capture more leads
           </p>
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            Book a Free Trial and stop missing enquiries.
+            Book a Free Discovery Call and stop missing enquiries.
           </h2>
           <p className="text-mist/90">
             We will set up your chatbot and make sure it captures leads 24/7.
