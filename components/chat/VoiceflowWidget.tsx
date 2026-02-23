@@ -10,6 +10,7 @@ declare global {
           verify: { projectID: string };
           url: string;
           versionID: string;
+          voice?: { url: string };
         }) => void;
       };
     };
@@ -18,37 +19,6 @@ declare global {
 }
 
 const SCRIPT_SRC = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
-
-function loadVoiceflowScript(onReady: () => void) {
-  const existingScript = document.querySelector(
-    "script[data-voiceflow-widget='true']"
-  ) as HTMLScriptElement | null;
-
-  if (existingScript) {
-    if (existingScript.dataset.loaded === "true") {
-      onReady();
-      return;
-    }
-
-    existingScript.addEventListener("load", onReady, { once: true });
-    return;
-  }
-
-  const script = document.createElement("script");
-  script.src = SCRIPT_SRC;
-  script.type = "module";
-  script.async = true;
-  script.dataset.voiceflowWidget = "true";
-  script.addEventListener(
-    "load",
-    () => {
-      script.dataset.loaded = "true";
-      onReady();
-    },
-    { once: true }
-  );
-  document.body.appendChild(script);
-}
 
 export default function VoiceflowWidget() {
   useEffect(() => {
@@ -59,24 +29,57 @@ export default function VoiceflowWidget() {
       return;
     }
 
-    const initializeWidget = () => {
-      if (window.__leadwingVoiceflowInitialized) {
-        return;
-      }
-
-      if (!window.voiceflow?.chat?.load) {
+    const initialize = () => {
+      if (window.__leadwingVoiceflowInitialized || !window.voiceflow?.chat?.load) {
         return;
       }
 
       window.voiceflow.chat.load({
         verify: { projectID },
         url: "https://general-runtime.voiceflow.com",
-        versionID
+        versionID,
+        voice: {
+          url: "https://runtime-api.voiceflow.com"
+        }
       });
+
       window.__leadwingVoiceflowInitialized = true;
     };
 
-    loadVoiceflowScript(initializeWidget);
+    const existingScript = document.querySelector(
+      "script[data-voiceflow-widget='true']"
+    ) as HTMLScriptElement | null;
+
+    if (existingScript) {
+      if (existingScript.dataset.loaded === "true") {
+        initialize();
+      } else {
+        existingScript.addEventListener("load", initialize, { once: true });
+      }
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = SCRIPT_SRC;
+    script.type = "text/javascript";
+    script.async = true;
+    script.dataset.voiceflowWidget = "true";
+    script.addEventListener(
+      "load",
+      () => {
+        script.dataset.loaded = "true";
+        initialize();
+      },
+      { once: true }
+    );
+
+    const firstScript = document.getElementsByTagName("script")[0];
+    if (firstScript?.parentNode) {
+      firstScript.parentNode.insertBefore(script, firstScript);
+      return;
+    }
+
+    document.body.appendChild(script);
   }, []);
 
   return null;
