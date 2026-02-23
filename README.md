@@ -16,6 +16,21 @@
 
 - Update metadata and analytics hooks in `app/layout.tsx` when going live.
 
+## Voiceflow chatbot setup (site-wide)
+
+1. Add these values to `.env.local`:
+   - `NEXT_PUBLIC_VOICEFLOW_PROJECT_ID`
+   - `NEXT_PUBLIC_VOICEFLOW_VERSION_ID` (usually `production`)
+2. Restart dev server after adding env vars.
+3. Open any route and confirm the floating chatbot appears.
+
+### Vercel
+
+1. Go to Project Settings -> Environment Variables.
+2. Add both `NEXT_PUBLIC_VOICEFLOW_*` variables for Production (and Preview if needed).
+3. Redeploy the project.
+4. Confirm chatbot loads on `https://leadwing.ai`.
+
 ## Free trial lead setup (Supabase + SendGrid)
 
 1. Create a Supabase project and a table named `free_trial_leads` with columns:

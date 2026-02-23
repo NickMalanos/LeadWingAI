@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AnalyticsPlaceholder from "@/components/metrics/AnalyticsPlaceholder";
+import VoiceflowWidget from "@/components/chat/VoiceflowWidget";
 
 export const metadata: Metadata = {
   title: "LeadWing | AI Chatbots for Tradies",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <AnalyticsPlaceholder />
+        <VoiceflowWidget />
       </body>
     </html>
   );
