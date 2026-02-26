@@ -1,55 +1,53 @@
-import Button from "@/components/ui/Button";
+"use client";
+
 import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
+import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export default function Hero() {
   return (
-    <Section className="bg-gradient-to-br from-brandBlue/15 via-white to-brandGreen/10">
-      <Container className="grid items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
+    <AnimatedSection className="bg-gradient-to-br from-navy via-navy/95 to-brandBlue/20 text-white">
+      <Container className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
         <div className="space-y-6">
-          <p className="text-sm font-semibold uppercase tracking-widest text-brandBlue">
-            Never Lose Another Lead
+          <p className="animate-on-scroll text-sm font-semibold uppercase tracking-widest text-brandGreen">
+            Your 24/7 AI Receptionist
           </p>
-          <h1 className="text-balance text-4xl font-extrabold leading-tight tracking-tight md:text-5xl">
-            Capture every enquiry and{" "}
-            <span className="text-brandBlue">book more jobs</span>.
+          <h1 className="animate-on-scroll stagger-1 text-balance text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+            Capture every lead.{" "}
+            <span className="text-brandGreen">Automatically.</span>
           </h1>
-          <p className="text-balance text-lg text-slate">
-            LeadWing provides AI chatbots that help trades and service
-            businesses capture, qualify, and convert leads automatically. Spend
-            less time chasing leads and more time growing your business.
+          <p className="animate-on-scroll stagger-2 text-balance text-lg text-white/70">
+            LeadWing gives local service businesses an AI chatbot that answers
+            enquiries, qualifies leads, and books jobs — so you can focus on
+            the work, not the phone.
           </p>
-          <div className="grid gap-3 text-sm text-slate">
-            <p>Replies 24/7 so you never miss a lead.</p>
-            <p>Answers questions and books jobs automatically.</p>
-            <p>Reduces admin without hiring more staff.</p>
+          <div className="animate-on-scroll stagger-3 grid gap-3 text-sm text-white/60">
+            <p>Replies instantly, 24/7 — even after hours.</p>
+            <p>Connects to your website and Instagram.</p>
+            <p>Less admin. More booked jobs.</p>
           </div>
-          <Button href="/about-us" variant="secondary">
-            About Us
-          </Button>
-          <p className="text-xs text-slate">
-            Works on your website, Facebook Messenger, and WhatsApp.
-          </p>
         </div>
-        <div className="rounded-3xl border border-brandBlue/10 bg-white/90 p-8 shadow-lg shadow-brandBlue/10">
+        <div className="animate-on-scroll stagger-2 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
           <div className="space-y-4">
-            <p className="text-sm font-semibold text-brandGreen">What you get</p>
-            <p className="text-lg font-semibold text-ink">
-              “Spending hours chasing leads and missing opportunities?”
+            <p className="text-sm font-semibold text-brandGreen">
+              What LeadWing does
             </p>
-            <div className="grid gap-3 text-sm text-slate">
-              <div className="rounded-2xl border border-brandBlue/10 bg-white p-4">
-                <p className="font-semibold text-ink">LeadWing captures</p>
-                <p>Every enquiry is saved, qualified, and sent to you.</p>
+            <div className="grid gap-3 text-sm text-white/70">
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="font-semibold text-white">Captures every enquiry</p>
+                <p>Your chatbot qualifies leads and sends them straight to you.</p>
               </div>
-              <div className="rounded-2xl border border-brandGreen/10 bg-white p-4">
-                <p className="font-semibold text-ink">You get the job</p>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="font-semibold text-white">Works everywhere</p>
+                <p>Website, Instagram, and Facebook Messenger — one chatbot.</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p className="font-semibold text-white">You get the job</p>
                 <p>More booked jobs, less admin, happier clients.</p>
               </div>
             </div>
           </div>
         </div>
       </Container>
-    </Section>
+    </AnimatedSection>
   );
 }

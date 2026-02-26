@@ -6,13 +6,13 @@ import AnalyticsPlaceholder from "@/components/metrics/AnalyticsPlaceholder";
 import VoiceflowWidget from "@/components/chat/VoiceflowWidget";
 
 export const metadata: Metadata = {
-  title: "LeadWing | AI Chatbots for Tradies",
+  title: "LeadWing | AI Chatbots for Local Service Businesses",
   description:
-    "LeadWing provides AI chatbots that help trades and service businesses capture, qualify, and convert leads automatically.",
+    "LeadWing provides AI chatbots that help local service businesses capture, qualify, and convert leads automatically.",
   openGraph: {
     title: "LeadWing",
     description:
-      "AI chatbots for Australian tradies to capture leads, book jobs, and answer FAQs 24/7.",
+      "AI chatbots for local service businesses. Capture leads, book jobs, and answer enquiries 24/7.",
     type: "website",
     locale: "en_AU"
   },
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gradient-to-br from-brandBlue/15 via-white to-brandGreen/15">
+      <body className="min-h-screen bg-white">
         <Header />
         <main>{children}</main>
         <Footer />
