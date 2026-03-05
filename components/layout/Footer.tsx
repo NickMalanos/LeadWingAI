@@ -4,7 +4,8 @@ import Container from "@/components/ui/Container";
 const footerLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
-  { label: "Privacy Policy", href: "/privacy-policy" }
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "MSA", href: "/msa" }
 ];
 
 export default function Footer() {
