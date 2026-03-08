@@ -14,7 +14,7 @@ export default function Hero() {
 
         <h1 className="animate-on-scroll stagger-1 mt-6 max-w-4xl text-balance text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
           Your franchisees are losing jobs{" "}
-          <span className="italic text-brandGreen">
+          <span className="italic text-brandOrange">
             between Friday and Monday.
           </span>
         </h1>

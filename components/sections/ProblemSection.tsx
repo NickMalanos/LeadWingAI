@@ -37,7 +37,7 @@ export default function ProblemSection() {
           </p>
           <h2 className="text-3xl font-extrabold leading-tight text-ink md:text-4xl lg:text-5xl">
             The revenue your network is{" "}
-            <span className="italic text-brandGreen">
+            <span className="italic text-brandOrange">
               generating for competitors.
             </span>
           </h2>
