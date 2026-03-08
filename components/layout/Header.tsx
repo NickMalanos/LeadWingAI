@@ -15,11 +15,7 @@ export default function Header() {
           />
           <span className="sr-only">Leadwing</span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm font-semibold text-slate">
-          <Link href="/about-us" className="hover:text-brandBlue transition">
-            About
-          </Link>
-        </nav>
+        <nav className="flex items-center gap-6 text-sm font-semibold text-slate" />
       </Container>
     </header>
   );
