@@ -15,72 +15,31 @@ declare global {
         open: () => void;
       };
     };
-    __leadwingVoiceflowInitialized?: boolean;
   }
 }
 
+const PROJECT_ID = "69a7840e7e59042952d1d1af";
 const SCRIPT_SRC = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
 
 export default function VoiceflowWidget() {
   useEffect(() => {
-    const projectID = process.env.NEXT_PUBLIC_VOICEFLOW_PROJECT_ID;
-    const versionID = process.env.NEXT_PUBLIC_VOICEFLOW_VERSION_ID;
+    if (typeof document === "undefined") return;
 
-    if (!projectID || !versionID || typeof window === "undefined") {
-      return;
-    }
+    const v = document.createElement("script");
+    const s = document.getElementsByTagName("script")[0];
 
-    const initialize = () => {
-      if (window.__leadwingVoiceflowInitialized || !window.voiceflow?.chat?.load) {
-        return;
-      }
-
-      window.voiceflow.chat.load({
-        verify: { projectID },
+    v.onload = () => {
+      window.voiceflow?.chat?.load({
+        verify: { projectID: PROJECT_ID },
         url: "https://general-runtime.voiceflow.com",
-        versionID,
-        voice: {
-          url: "https://runtime-api.voiceflow.com"
-        }
+        versionID: "production",
+        voice: { url: "https://runtime-api.voiceflow.com" },
       });
-
-      window.__leadwingVoiceflowInitialized = true;
     };
 
-    const existingScript = document.querySelector(
-      "script[data-voiceflow-widget='true']"
-    ) as HTMLScriptElement | null;
-
-    if (existingScript) {
-      if (existingScript.dataset.loaded === "true") {
-        initialize();
-      } else {
-        existingScript.addEventListener("load", initialize, { once: true });
-      }
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = SCRIPT_SRC;
-    script.type = "text/javascript";
-    script.async = true;
-    script.dataset.voiceflowWidget = "true";
-    script.addEventListener(
-      "load",
-      () => {
-        script.dataset.loaded = "true";
-        initialize();
-      },
-      { once: true }
-    );
-
-    const firstScript = document.getElementsByTagName("script")[0];
-    if (firstScript?.parentNode) {
-      firstScript.parentNode.insertBefore(script, firstScript);
-      return;
-    }
-
-    document.body.appendChild(script);
+    v.src = SCRIPT_SRC;
+    v.type = "text/javascript";
+    s?.parentNode?.insertBefore(v, s);
   }, []);
 
   return null;

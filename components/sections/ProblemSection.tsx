@@ -107,13 +107,12 @@ export default function ProblemSection() {
         {/* Callout */}
         <div className="animate-on-scroll rounded-2xl border-l-4 border-l-brandGreen bg-mist/60 p-8">
           <blockquote className="text-base italic leading-relaxed text-ink">
-            &ldquo;This isn&apos;t a missed call problem. It&apos;s a systemic
-            revenue leak that compounds with every location you add — and
-            headquarters doesn&apos;t see it until the quarterly review.&rdquo;
+            &ldquo;It doesn&apos;t really matter how many enquiries are coming
+            through after hours anymore because our competition is capturing
+            them when we aren&apos;t. An email will come through at 5:05pm on
+            Friday and sit there until 9am Monday morning… by then
+            they&apos;ve already called someone else.&rdquo;
           </blockquote>
-          <p className="mt-4 text-sm font-semibold text-steel/60">
-            — The Leadwing Network Response Audit
-          </p>
         </div>
       </Container>
     </AnimatedSection>
