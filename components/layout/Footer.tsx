@@ -5,7 +5,7 @@ const footerLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-us" },
   { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "MSA", href: "/msa" }
+  { label: "MSA", href: "/msa" },
 ];
 
 export default function Footer() {
@@ -13,13 +13,13 @@ export default function Footer() {
     <footer className="border-t border-slate/5 bg-navy text-white/80">
       <Container className="grid gap-6 py-10 md:grid-cols-[1.2fr_1fr]">
         <div className="space-y-3">
-          <p className="text-lg font-extrabold text-white">LeadWing</p>
+          <p className="text-lg font-extrabold text-white">Leadwing</p>
           <p className="text-sm">
-            AI chatbots that help local service businesses capture and convert
-            leads automatically.
+            Lead infrastructure for franchise networks. Every lead captured,
+            qualified, and routed — before your competitors even pick up.
           </p>
           <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} LeadWing AI. All rights reserved.
+            © {new Date().getFullYear()} Leadwing. All rights reserved.
           </p>
         </div>
         <div className="flex flex-wrap gap-4 text-sm font-semibold">

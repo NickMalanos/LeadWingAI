@@ -1,24 +1,30 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
-import Features from "@/components/sections/Features";
+import ProblemSection from "@/components/sections/ProblemSection";
+import SolutionSection from "@/components/sections/SolutionSection";
+import HowItWorksSection from "@/components/sections/HowItWorksSection";
+import EnterpriseSection from "@/components/sections/EnterpriseSection";
 
 export const metadata: Metadata = {
-  title: "LeadWing | AI Chatbots for Local Service Businesses",
+  title: "Leadwing | Lead Infrastructure for Franchise Networks",
   description:
-    "AI chatbots that help local service businesses capture, qualify, and convert leads automatically.",
+    "Leadwing closes the Response Gap across your franchise network. Every lead captured, qualified, and routed in under 90 seconds. 24/7.",
   openGraph: {
-    title: "LeadWing",
+    title: "Leadwing",
     description:
-      "Never lose another lead. AI chatbots for local service businesses.",
-    type: "website"
-  }
+      "Lead infrastructure for franchise networks. Every lead. Every location. Responded to in under 90 seconds.",
+    type: "website",
+  },
 };
 
 export default function HomePage() {
   return (
     <>
       <Hero />
-      <Features />
+      <ProblemSection />
+      <SolutionSection />
+      <HowItWorksSection />
+      <EnterpriseSection />
     </>
   );
 }

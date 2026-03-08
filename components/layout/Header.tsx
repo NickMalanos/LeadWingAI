@@ -8,12 +8,12 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <img
             src="/leadwing-logo.png"
-            alt="LeadWing"
+            alt="Leadwing"
             width={190}
             height={55}
             className="h-12 w-auto md:h-14"
           />
-          <span className="sr-only">LeadWing</span>
+          <span className="sr-only">Leadwing</span>
         </Link>
         <nav className="flex items-center gap-6 text-sm font-semibold text-slate">
           <Link href="/about-us" className="hover:text-brandBlue transition">

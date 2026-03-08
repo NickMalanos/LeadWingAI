@@ -12,6 +12,7 @@ declare global {
           versionID: string;
           voice?: { url: string };
         }) => void;
+        open: () => void;
       };
     };
     __leadwingVoiceflowInitialized?: boolean;

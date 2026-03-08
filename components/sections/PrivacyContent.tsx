@@ -233,10 +233,10 @@ export default function PrivacyContent() {
             If you believe we have breached the Privacy Act, please contact us
             at{" "}
             <a
-              href="mailto:leadwingai@gmail.com"
+              href="mailto:admin@leadwing.com.au"
               className="text-brandBlue underline hover:text-brandBlue/80"
             >
-              leadwingai@gmail.com
+              admin@leadwing.com.au
             </a>
             . We will investigate and respond within 30 days. If you are not
             satisfied with our response, you may contact the Office of the
@@ -280,10 +280,10 @@ export default function PrivacyContent() {
             <p>
               Email:{" "}
               <a
-                href="mailto:leadwingai@gmail.com"
+                href="mailto:admin@leadwing.com.au"
                 className="text-brandBlue underline hover:text-brandBlue/80"
               >
-                leadwingai@gmail.com
+                admin@leadwing.com.au
               </a>
             </p>
           </div>

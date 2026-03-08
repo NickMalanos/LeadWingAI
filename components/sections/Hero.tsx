@@ -2,51 +2,59 @@
 
 import Container from "@/components/ui/Container";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import { openVoiceflow } from "@/lib/voiceflow";
 
 export default function Hero() {
   return (
     <AnimatedSection className="bg-gradient-to-br from-navy via-navy/95 to-brandBlue/20 text-white">
-      <Container className="grid items-center gap-12 md:grid-cols-[1.1fr_0.9fr]">
-        <div className="space-y-6">
-          <p className="animate-on-scroll text-sm font-semibold uppercase tracking-widest text-brandGreen">
-            Your 24/7 AI Receptionist
-          </p>
-          <h1 className="animate-on-scroll stagger-1 text-balance text-4xl font-extrabold leading-tight tracking-tight md:text-5xl lg:text-6xl">
-            Capture every lead.{" "}
-            <span className="text-brandGreen">Automatically.</span>
-          </h1>
-          <p className="animate-on-scroll stagger-2 text-balance text-lg text-white/70">
-            LeadWing gives local service businesses an AI chatbot that answers
-            enquiries, qualifies leads, and books jobs — so you can focus on
-            the work, not the phone.
-          </p>
-          <div className="animate-on-scroll stagger-3 grid gap-3 text-sm text-white/60">
-            <p>Replies instantly, 24/7 — even after hours.</p>
-            <p>Connects to your website and Instagram.</p>
-            <p>Less admin. More booked jobs.</p>
-          </div>
+      <Container className="flex flex-col items-center text-center">
+        <p className="animate-on-scroll text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
+          Lead Infrastructure&nbsp;&nbsp;·&nbsp;&nbsp;Franchise Networks
+        </p>
+
+        <h1 className="animate-on-scroll stagger-1 mt-6 max-w-4xl text-balance text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
+          Your franchisees are losing jobs{" "}
+          <span className="italic text-brandGreen">
+            between Friday and Monday.
+          </span>
+        </h1>
+
+        <p className="animate-on-scroll stagger-2 mt-6 max-w-3xl text-balance text-lg leading-relaxed text-white/65">
+          The <strong className="text-white">Response Gap</strong> — the silence
+          between an enquiry arriving and a human picking up — is a systemic
+          revenue leak that compounds across every location in your network.{" "}
+          <strong className="text-white">
+            Leadwing closes it. Every lead. Every location. Responded to in
+            under 90&nbsp;seconds. 24/7.
+          </strong>
+        </p>
+
+        <div className="animate-on-scroll stagger-3 mt-10 flex flex-col items-center gap-4 sm:flex-row">
+          <button
+            onClick={openVoiceflow}
+            className="inline-flex items-center justify-center rounded-full bg-brandGreen px-8 py-3.5 text-sm font-semibold text-white shadow-lg transition hover:brightness-110"
+          >
+            Request a Network Audit
+          </button>
+          <button
+            onClick={openVoiceflow}
+            className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10"
+          >
+            Calculate Your Response Gap
+          </button>
         </div>
-        <div className="animate-on-scroll stagger-2 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
-          <div className="space-y-4">
-            <p className="text-sm font-semibold text-brandGreen">
-              What LeadWing does
-            </p>
-            <div className="grid gap-3 text-sm text-white/70">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="font-semibold text-white">Captures every enquiry</p>
-                <p>Your chatbot qualifies leads and sends them straight to you.</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="font-semibold text-white">Works everywhere</p>
-                <p>Website, Instagram, and Facebook Messenger — one chatbot.</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                <p className="font-semibold text-white">You get the job</p>
-                <p>More booked jobs, less admin, happier clients.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <button
+          onClick={openVoiceflow}
+          className="animate-on-scroll stagger-4 mt-8 inline-flex items-center gap-2.5 text-sm text-white/50 transition hover:text-white/80"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brandGreen opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-brandGreen" />
+          </span>
+          Our AI will qualify your network and book a time — in under
+          2&nbsp;minutes&nbsp;↗
+        </button>
       </Container>
     </AnimatedSection>
   );

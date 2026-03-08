@@ -6,21 +6,21 @@ import AnalyticsPlaceholder from "@/components/metrics/AnalyticsPlaceholder";
 import VoiceflowWidget from "@/components/chat/VoiceflowWidget";
 
 export const metadata: Metadata = {
-  title: "LeadWing | AI Chatbots for Local Service Businesses",
+  title: "Leadwing | Lead Infrastructure for Franchise Networks",
   description:
-    "LeadWing provides AI chatbots that help local service businesses capture, qualify, and convert leads automatically.",
+    "Leadwing closes the Response Gap across your franchise network. Every lead captured, qualified, and routed in under 90 seconds. 24/7.",
   openGraph: {
-    title: "LeadWing",
+    title: "Leadwing",
     description:
-      "AI chatbots for local service businesses. Capture leads, book jobs, and answer enquiries 24/7.",
+      "Lead infrastructure for franchise networks. Every lead. Every location. Responded to in under 90 seconds.",
     type: "website",
-    locale: "en_AU"
+    locale: "en_AU",
   },
-  metadataBase: new URL("https://leadwing.ai")
+  metadataBase: new URL("https://leadwing.ai"),
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
