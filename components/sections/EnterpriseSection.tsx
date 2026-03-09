@@ -38,9 +38,10 @@ export default function EnterpriseSection() {
                 One engagement. Every territory. Every franchisee covered.
               </p>
               <p>
-                No headcount added to your national operations team. No new
-                processes for your franchisees to adopt. Leadwing works behind
-                your existing operation — and your network simply stops leaking.
+                No headcount added to your national operations team. No manual
+                routing process propped up by an admin team. No new processes
+                for your franchisees to adopt. Leadwing works behind your
+                existing operation — and your network simply stops leaking.
               </p>
               <p>
                 If your Head of Marketing is struggling to prove channel ROI

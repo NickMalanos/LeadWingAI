@@ -20,7 +20,7 @@ const features = [
     num: "03",
     label: "Route",
     subtitle: "Territory-matched. CRM-delivered. In seconds.",
-    body: "Qualified lead data is pushed directly to the right franchisee via CRM, SMS, or email — identified by territory, automatically. Speed to Lead is measured in seconds. Your franchisees close. Leadwing handles everything before that.",
+    body: "Most networks route manually — form to admin team to territory check to forward. Every step is a delay. Every handoff is a point of failure. Leadwing replaces the entire chain: qualified lead data is pushed directly to the right franchisee via CRM, SMS, or email — identified by territory, automatically, in seconds. No admin overhead. No routing errors. Your franchisees close. Leadwing handles everything before that.",
   },
   {
     num: "04",

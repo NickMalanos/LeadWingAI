@@ -3,7 +3,7 @@
 import Container from "@/components/ui/Container";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-const timeline = [
+const afterHoursTimeline = [
   {
     time: "Friday · 5:05 PM",
     body: "A homeowner submits an enquiry — urgent job, ready to commit. It hits a local branch inbox.",
@@ -21,8 +21,17 @@ const timeline = [
   },
   {
     time: "Monday · 9:00 AM",
-    body: 'Your franchisee calls back. The customer is already on\u2011site with someone else. The lead is logged as "no answer."',
+    body: 'Your franchisee calls back. The customer is already on\u2011site with someone else. The lead is logged as \u201Cno answer.\u201D',
     highlight: false,
+  },
+];
+
+const routingTimeline = [
+  {
+    time: "Tuesday · 10:30 AM",
+    body: "A different homeowner fills out the enquiry form on your network\u2019s website. It lands with your central admin team. Someone reads it, identifies the territory, and manually forwards it to the right franchisee — if they get it right.",
+    body2: "By the time it arrives, 40 minutes have passed. Your competitor responded in two.",
+    highlight: true,
   },
 ];
 
@@ -47,7 +56,7 @@ export default function ProblemSection() {
         <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           {/* Timeline */}
           <div className="relative space-y-5">
-            {timeline.map((item, i) => (
+            {afterHoursTimeline.map((item, i) => (
               <div
                 key={i}
                 className={`animate-on-scroll stagger-${Math.min(i + 1, 4)} rounded-2xl border p-6 ${
@@ -77,6 +86,30 @@ export default function ProblemSection() {
                 </p>
               </div>
             ))}
+
+            <p className="animate-on-scroll py-2 text-sm font-semibold italic text-ink">
+              But the after-hours gap is only half the problem.
+            </p>
+
+            {routingTimeline.map((item, i) => (
+              <div
+                key={`rt-${i}`}
+                className="animate-on-scroll rounded-2xl border border-brandOrange/30 bg-navy p-6 text-white"
+              >
+                <div className="mb-2 flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-brandOrange" />
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-brandOrange">
+                    {item.time}
+                  </p>
+                </div>
+                <p className="text-sm leading-relaxed text-white/90">
+                  {item.body}
+                </p>
+                <p className="mt-3 text-sm font-semibold leading-relaxed text-white">
+                  {item.body2}
+                </p>
+              </div>
+            ))}
           </div>
 
           {/* Stats */}
@@ -96,9 +129,10 @@ export default function ProblemSection() {
                 60×
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate">
-                Multiply this scenario across 60 locations, every weekend, every
-                public holiday. This isn&apos;t a franchisee problem — it&apos;s
-                a structural flaw in how your network operates.
+                Multiply both scenarios across 60 locations, every day of the
+                week. This isn&apos;t a franchisee problem — it&apos;s a
+                structural flaw in how your network operates. And the manual
+                system holding it all together is making it worse.
               </p>
             </div>
           </div>
