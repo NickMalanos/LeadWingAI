@@ -27,12 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body className="min-h-screen bg-white">
         <Header />
         <main>{children}</main>
