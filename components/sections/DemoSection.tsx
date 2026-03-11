@@ -191,7 +191,7 @@ export default function DemoSection() {
               <div className="lw-email-card">
                 <div className="lw-email-header-bar">
                   <h3>New Lead — Action Required</h3>
-                  <p>Respond ASAP for best results</p>
+                  <p>Best results come from contact within the first 5 minutes</p>
                 </div>
                 <div className="lw-email-body">
                   <div className="lw-email-section-title">Customer Details</div>
@@ -244,7 +244,7 @@ export default function DemoSection() {
                     <span>📞</span>
                     <span>
                       Call <strong>Sarah Mitchell</strong> on{" "}
-                      <strong>0412 388 204</strong> ASAP.
+                      <strong>0412 388 204</strong> within 5 minutes.
                     </span>
                   </div>
                 </div>
