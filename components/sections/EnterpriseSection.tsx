@@ -5,10 +5,10 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 import { openVoiceflow } from "@/lib/voiceflow";
 
 const deliverables = [
-  "Current response time benchmark across all territories",
+  "Lead-to-Appointment conversion rate by territory",
+  "Current Speed to Lead benchmark across all locations",
   "Estimated annual revenue lost through your Response Gap",
-  "Location-by-location breakdown of your weakest points",
-  "A bespoke infrastructure recommendation for your network",
+  "A bespoke infrastructure recommendation aligned to your network\u2019s priorities",
 ];
 
 export default function EnterpriseSection() {
@@ -22,7 +22,7 @@ export default function EnterpriseSection() {
               Enterprise Partnership
             </p>
             <h2 className="text-3xl font-extrabold leading-tight text-ink md:text-4xl lg:text-5xl">
-              Built for networks.{" "}
+              Built for franchise networks.{" "}
               <span className="italic text-brandGreen">
                 Not solo operators.
               </span>
@@ -30,10 +30,10 @@ export default function EnterpriseSection() {
 
             <div className="space-y-5 text-base leading-relaxed text-slate">
               <p>
-                We don&apos;t do starter plans or per-user subscriptions.{" "}
+                We don&apos;t do starter plans or per-user pricing.{" "}
                 <strong>
                   We build bespoke lead infrastructure for franchise networks
-                  running 40 to 200+ locations.
+                  running 20 to 100+ locations across Australia and New Zealand.
                 </strong>{" "}
                 One engagement. Every territory. Every franchisee covered.
               </p>
@@ -41,17 +41,19 @@ export default function EnterpriseSection() {
                 No headcount added to your national operations team. No manual
                 routing process propped up by an admin team. No new processes
                 for your franchisees to adopt. Leadwing works behind your
-                existing operation — and your network simply stops leaking.
+                existing operation — and your network simply stops leaking
+                revenue.
               </p>
               <p>
-                If your Head of Marketing is struggling to prove channel ROI
-                because leads go dark before they&apos;re tracked, Leadwing
-                solves that too.{" "}
+                If your Head of Marketing can&apos;t prove channel ROI because
+                leads go dark before they&apos;re tracked — or if your
+                franchisees are questioning the value of national marketing
+                because they can&apos;t see the results — Leadwing solves both.{" "}
                 <strong>
-                  Every enquiry logged. Every outcome attributed.
+                  Every enquiry logged. Every outcome attributed. Full-funnel
+                  visibility
                 </strong>{" "}
-                Full-funnel visibility from the first touchpoint to the closed
-                job.
+                from the first touchpoint to the closed job.
               </p>
             </div>
           </div>
@@ -65,8 +67,9 @@ export default function EnterpriseSection() {
               The Network Response Audit
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-slate">
-              We analyse your current Speed to Lead metrics and show you exactly
-              where revenue is leaking — location by location. No pitch deck. No
+              We measure your current Speed to Lead across every territory and
+              show you exactly where Lead-to-Appointment conversion friction is
+              costing you revenue — location by location. No pitch deck. No
               generic ROI calculator. Real data from your actual network, before
               you spend a cent.
             </p>

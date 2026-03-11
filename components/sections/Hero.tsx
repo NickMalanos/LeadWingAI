@@ -9,7 +9,7 @@ export default function Hero() {
     <AnimatedSection className="bg-gradient-to-br from-navy via-navy/95 to-brandBlue/20 text-white">
       <Container className="flex flex-col items-center text-center">
         <p className="animate-on-scroll text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
-          Lead Infrastructure&nbsp;&nbsp;·&nbsp;&nbsp;Franchise Networks
+          Network-Wide Lead Infrastructure&nbsp;&nbsp;·&nbsp;&nbsp;AU &amp; NZ
         </p>
 
         <h1 className="animate-on-scroll stagger-1 mt-6 max-w-4xl text-balance text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
@@ -21,11 +21,13 @@ export default function Hero() {
 
         <p className="animate-on-scroll stagger-2 mt-6 max-w-3xl text-balance text-lg leading-relaxed text-white/65">
           The <strong className="text-white">Response Gap</strong> — the silence
-          between an enquiry arriving and a human picking up — is a systemic
-          revenue leak that compounds across every location in your network.{" "}
+          between an enquiry arriving and a franchisee responding — is the #1
+          driver of Lead-to-Appointment conversion friction in your network.
+          Respond in 5&nbsp;minutes and you&apos;re 100× more likely to convert.
+          Wait 30 and the job is gone.{" "}
           <strong className="text-white">
-            Leadwing closes it. Every lead. Every location. Responded to in
-            under 90&nbsp;seconds. 24/7.
+            Leadwing responds in under 90&nbsp;seconds. Every lead. Every
+            location. 24/7.
           </strong>
         </p>
 

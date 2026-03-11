@@ -7,20 +7,20 @@ const steps = [
   {
     num: "01",
     label: "Capture",
-    subtitle: "24/7 Intake",
-    body: "Every enquiry — web, phone, form — is captured and engaged instantly. Whether it\u2019s a public holiday or 2:00\u00A0AM, the response gap is zero.",
+    subtitle: "Always-On Intake",
+    body: "Every enquiry \u2014 web, phone, form, after-hours \u2014 is captured and engaged instantly. Whether it\u2019s a public holiday or 2:00\u00A0AM, the Response Gap is zero. Your network never misses another lead.",
   },
   {
     num: "02",
     label: "Qualify",
-    subtitle: "Deep Logic Filtering",
-    body: "Our AI qualifies scope, budget, and urgency — filtering out the uncommitted so your franchisees only receive leads that are ready to convert.",
+    subtitle: "Intelligent Filtering",
+    body: "Our AI qualifies scope, budget, and urgency in real time \u2014 filtering out tyre-kickers so your franchisees only receive leads that are ready to convert. Lead quality over lead quantity, built into the infrastructure.",
   },
   {
     num: "03",
     label: "Route",
     subtitle: "Automated Handoff",
-    body: "Qualified data pushed directly to the right franchisee via CRM, SMS, or email. Speed to Lead: seconds. Every time, without exception.",
+    body: "Qualified lead data pushed directly to the right franchisee via CRM, SMS, or email \u2014 territory-matched, automatically. Speed to Lead: seconds. Lead-to-Appointment conversion friction: eliminated.",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function HowItWorksSection() {
           <h2 className="text-3xl font-extrabold leading-tight md:text-4xl lg:text-5xl">
             Three steps.{" "}
             <span className="italic text-brandGreen">
-              Measured in seconds.
+              Under 90&nbsp;seconds.
             </span>
           </h2>
         </div>

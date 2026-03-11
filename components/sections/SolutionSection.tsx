@@ -7,26 +7,26 @@ const features = [
   {
     num: "01",
     label: "Capture",
-    subtitle: "Always-on intake. No exceptions.",
-    body: "2:00 AM on a Sunday. Public holiday. Every lead is greeted and engaged the moment it arrives — without a single human involved. No voicemail black holes. Immediate, intelligent response, every time.",
+    subtitle: "Zero Response Gap. Every enquiry. Every hour.",
+    body: "2:00 AM on a Sunday. Public holiday. Grand Final weekend. Every lead is greeted and engaged the moment it arrives \u2014 without a single human involved. No voicemail black holes. No Monday morning inbox pile-up. The Response Gap drops to zero, and your Lead-to-Appointment conversion starts at the first touchpoint.",
   },
   {
     num: "02",
     label: "Qualify",
-    subtitle: "Only ready-to-work leads hit your franchisees.",
-    body: "We handle complex, high-ticket intake across trades and service businesses, qualifying scope, budget, and urgency before any human touches the lead. Your franchisees start the day with a desk full of real jobs — not tyre-kickers.",
+    subtitle: "Lead quality over lead quantity.",
+    body: "The FCA\u2019s shift from lead volume to lead quality starts here. We handle complex, high-ticket intake across trades and services \u2014 qualifying scope, budget, urgency, and timeline before any human touches the lead. Your franchisees don\u2019t waste time on tyre-kickers. They start each day with a pipeline of qualified, ready-to-convert jobs.",
   },
   {
     num: "03",
     label: "Route",
     subtitle: "Territory-matched. CRM-delivered. In seconds.",
-    body: "Most networks route manually — form to admin team to territory check to forward. Every step is a delay. Every handoff is a point of failure. Leadwing replaces the entire chain: qualified lead data is pushed directly to the right franchisee via CRM, SMS, or email — identified by territory, automatically, in seconds. No admin overhead. No routing errors. Your franchisees close. Leadwing handles everything before that.",
+    body: "Most networks route manually \u2014 form to admin team to territory check to forward. Every step adds conversion friction. Every handoff is a point of failure. Leadwing replaces the entire chain: qualified lead data pushed directly to the right franchisee via CRM, SMS, or email \u2014 identified by territory, automatically, in seconds. No admin overhead. No routing errors.",
   },
   {
     num: "04",
     label: "Visibility",
-    subtitle: "Network-wide intelligence, finally in one place.",
-    body: "A centralised dashboard gives your leadership real-time data on response times and lead health across every territory. Your Head of Marketing gets full-funnel attribution. Your CEO sees exactly where the network is performing — and where it isn\u2019t.",
+    subtitle: "Prove franchisee revenue uplift. Network-wide.",
+    body: "Your CEO gets real-time data on response times and lead health across every territory. Your Head of Marketing gets full-funnel attribution \u2014 from first touchpoint to closed job. No more leads going dark before they\u2019re tracked. No more quarterly reviews that reveal problems three months too late. The data your network needs to prove ROI and support franchisee profitability.",
   },
 ];
 
@@ -41,15 +41,17 @@ export default function SolutionSection() {
           <h2 className="text-3xl font-extrabold leading-tight text-ink md:text-4xl lg:text-5xl">
             Not a chatbot.{" "}
             <span className="italic text-brandGreen">
-              Lead infrastructure.
+              Network-wide lead infrastructure.
             </span>
           </h2>
           <p className="max-w-2xl text-base leading-relaxed text-slate">
-            Leadwing replaces the manual intake gap with a proprietary AI engine
-            that sits behind your existing operations.{" "}
+            The FCA is pushing practical AI implementation for 2026 — not
+            theoretical pilots, but operational infrastructure that delivers
+            measurable franchisee revenue uplift from day one. That&apos;s
+            exactly what we built.{" "}
             <strong>
-              Every enquiry — regardless of hour, location, or day — is
-              captured, qualified, and routed to the right franchisee before your
+              Every enquiry — regardless of hour, location, or day — captured,
+              qualified, and routed to the right franchisee before your
               competitor&apos;s phone even rings.
             </strong>{" "}
             No added headcount. No new process for your franchisees to adopt.

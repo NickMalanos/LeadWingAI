@@ -29,7 +29,7 @@ const afterHoursTimeline = [
 const routingTimeline = [
   {
     time: "Tuesday · 10:30 AM",
-    body: "A different homeowner fills out the enquiry form on your network\u2019s website. It lands with your central admin team. Someone reads it, identifies the territory, and manually forwards it to the right franchisee — if they get it right.",
+    body: "A different homeowner fills out the enquiry form on your network\u2019s website. It lands with your central admin team. Someone reads it, identifies the territory, and manually forwards it to the right franchisee \u2014 if they get it right.",
     body2: "By the time it arrives, 40 minutes have passed. Your competitor responded in two.",
     highlight: true,
   },
@@ -116,12 +116,14 @@ export default function ProblemSection() {
           <div className="space-y-6">
             <div className="animate-on-scroll rounded-2xl border border-steel/10 bg-mist/60 p-8">
               <p className="text-6xl font-extrabold tracking-tight text-ink">
-                78%
+                100×
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate">
-                of high-intent customers book with the first business that
-                responds. Not the best price. Not the best reviews. The fastest
-                response.
+                Respond in 5&nbsp;minutes vs 30 and you&apos;re 100× more
+                likely to win the job. That&apos;s HubSpot data across millions
+                of B2C leads. Most franchise networks don&apos;t respond in
+                30&nbsp;minutes. They respond in hours. On weekends, they
+                don&apos;t respond at all.
               </p>
             </div>
             <div className="animate-on-scroll stagger-1 rounded-2xl border border-steel/10 bg-mist/60 p-8">
@@ -129,10 +131,11 @@ export default function ProblemSection() {
                 60×
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate">
-                Multiply both scenarios across 60 locations, every day of the
-                week. This isn&apos;t a franchisee problem — it&apos;s a
-                structural flaw in how your network operates. And the manual
-                system holding it all together is making it worse.
+                Scale this across 60 locations, 365 days a year. The FCA has
+                named Lead-to-Appointment conversion as a top priority for 2026.
+                This is exactly why. Every location without real-time response
+                capability is converting your marketing spend into competitor
+                revenue.
               </p>
             </div>
           </div>
