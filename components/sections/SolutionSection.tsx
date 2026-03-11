@@ -14,7 +14,7 @@ const features = [
     num: "02",
     label: "Qualify",
     subtitle: "Lead quality over lead quantity.",
-    body: "The FCA\u2019s shift from lead volume to lead quality starts here. We handle complex, high-ticket intake across trades and services \u2014 qualifying scope, budget, urgency, and timeline before any human touches the lead. Your franchisees don\u2019t waste time on tyre-kickers. They start each day with a pipeline of qualified, ready-to-convert jobs.",
+    body: "The smartest networks have stopped chasing lead volume and started fixing lead quality. This is where that shift starts. We handle complex, high-ticket intake across trades and services \u2014 qualifying scope, budget, urgency, and timeline before any human touches the lead. Your franchisees don\u2019t waste time on tyre-kickers. They start each day with a pipeline of qualified, ready-to-convert jobs.",
   },
   {
     num: "03",
@@ -45,10 +45,9 @@ export default function SolutionSection() {
             </span>
           </h2>
           <p className="max-w-2xl text-base leading-relaxed text-slate">
-            The FCA is pushing practical AI implementation for 2026 — not
-            theoretical pilots, but operational infrastructure that delivers
-            measurable franchisee revenue uplift from day one. That&apos;s
-            exactly what we built.{" "}
+            Franchise networks don&apos;t need another AI pilot. They need
+            operational infrastructure that delivers measurable franchisee
+            revenue uplift from day one. That&apos;s exactly what we built.{" "}
             <strong>
               Every enquiry — regardless of hour, location, or day — captured,
               qualified, and routed to the right franchisee before your

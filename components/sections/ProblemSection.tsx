@@ -131,11 +131,12 @@ export default function ProblemSection() {
                 60×
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate">
-                Scale this across 60 locations, 365 days a year. The FCA has
-                named Lead-to-Appointment conversion as a top priority for 2026.
-                This is exactly why. Every location without real-time response
-                capability is converting your marketing spend into competitor
-                revenue.
+                Scale this across 60 locations, 365 days a year.
+                Lead-to-Appointment conversion is the single biggest lever in
+                franchise network performance — and this is exactly why most
+                networks are failing at it. Every location without real-time
+                response capability is converting your marketing spend into
+                competitor revenue.
               </p>
             </div>
           </div>
