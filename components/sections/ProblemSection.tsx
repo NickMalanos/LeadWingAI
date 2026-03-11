@@ -119,11 +119,11 @@ export default function ProblemSection() {
                 100×
               </p>
               <p className="mt-4 text-sm leading-relaxed text-slate">
-                Respond in 5&nbsp;minutes vs 30 and you&apos;re 100× more
-                likely to win the job. That&apos;s HubSpot data across millions
-                of B2C leads. Most franchise networks don&apos;t respond in
-                30&nbsp;minutes. They respond in hours. On weekends, they
-                don&apos;t respond at all.
+                Contact a lead within the first 5&nbsp;minutes and
+                you&apos;re 100× more likely to reach them than if you wait 30.
+                That&apos;s HubSpot data across millions of B2C leads. Most
+                franchise networks don&apos;t respond in 30&nbsp;minutes. They
+                respond in hours. On weekends, they don&apos;t respond at all.
               </p>
             </div>
             <div className="animate-on-scroll stagger-1 rounded-2xl border border-steel/10 bg-mist/60 p-8">

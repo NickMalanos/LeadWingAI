@@ -23,8 +23,8 @@ export default function Hero() {
           The <strong className="text-white">Response Gap</strong> — the silence
           between an enquiry arriving and a franchisee responding — is the #1
           driver of Lead-to-Appointment conversion friction in your network.
-          Respond in 5&nbsp;minutes and you&apos;re 100× more likely to convert.
-          Wait 30 and the job is gone.{" "}
+          Contact a lead within the first 5&nbsp;minutes and you&apos;re 100×
+          more likely to reach them than if you wait 30.{" "}
           <strong className="text-white">
             Leadwing responds in under 90&nbsp;seconds. Every lead. Every
             location. 24/7.
