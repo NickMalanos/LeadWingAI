@@ -15,7 +15,7 @@ export default function PrivacyContent() {
             LEADWING Privacy Policy
           </h1>
           <p className="text-sm text-slate">
-            ABN: 34 695 083 642 — Last Updated: 6/03/2026
+            ABN: 34 695 083 642 — Last Updated: 13/03/2026
           </p>
         </div>
 
@@ -29,9 +29,9 @@ export default function PrivacyContent() {
           <p>
             This Privacy Policy explains how we collect, use, disclose, and
             securely store personal information through our proprietary
-            AI-powered lead orchestration infrastructure. This policy applies
-            to our business clients (&ldquo;Clients&rdquo;) and the end-users
-            who interact with our Services via our Clients&apos; platforms
+            AI-powered lead orchestration infrastructure. This policy applies to
+            our business clients (&ldquo;Clients&rdquo;) and the end-users who
+            interact with our Services via our Clients&apos; platforms
             (&ldquo;End-Customers&rdquo;).
           </p>
         </div>
@@ -57,11 +57,11 @@ export default function PrivacyContent() {
           </PolicySubSection>
           <PolicySubSection title="1.2 Interactive AI Collection">
             <p>
-              Information is collected through our proprietary AI
-              assistant embedded on Client websites. By
-              interacting with the AI, you consent to the real-time processing
-              of your data to qualify your service request and facilitate
-              routing to the appropriate service provider within our network.
+              Information is collected through our proprietary AI assistant
+              embedded on Client websites. By interacting with the AI, you
+              consent to the real-time processing of your data to qualify your
+              service request and facilitate routing to the appropriate service
+              provider within our network.
             </p>
           </PolicySubSection>
         </PolicySection>
@@ -89,14 +89,13 @@ export default function PrivacyContent() {
           </PolicySubSection>
           <PolicySubSection title="2.2 Network Distribution & Routing (Franchise & Multi-Location Clients)">
             <p>
-              Leadwing operates a centralized lead orchestration system.
-              Depending on the postcode or location data provided,
-              End-Customer information will be disclosed directly to the
-              specific, independent franchisee or authorized service partner
-              responsible for that geographic area. These partners are
-              independent entities; however, they are required by the Client
-              Head Office to handle data in accordance with the Australian
-              Privacy Act 1988.
+              Leadwing operates a centralised lead orchestration system.
+              Depending on the postcode or location data provided, End-Customer
+              information will be disclosed directly to the specific, independent
+              franchisee or authorised service partner responsible for that
+              geographic area. These partners are independent entities; however,
+              they are required by the Client Head Office to handle data in
+              accordance with the Australian Privacy Act 1988.
             </p>
           </PolicySubSection>
           <PolicySubSection title="2.3 Direct Marketing">
@@ -121,11 +120,11 @@ export default function PrivacyContent() {
           </PolicySubSection>
           <PolicySubSection title="3.2 Use of Artificial Intelligence & LLMs">
             <p>
-              We utilize Large Language Models (LLMs) and Natural Language
-              Processing (NLP) to interpret and categorize enquiries. While the
-              AI analyzes message content to provide accurate responses and
-              route leads, this data is used strictly for fulfilling the
-              immediate request and is never used to train public AI models.
+              We utilise Large Language Models (LLMs) and Natural Language
+              Processing (NLP) to interpret and categorise enquiries. While the
+              AI analyses message content to provide accurate responses and route
+              leads, this data is used strictly for fulfilling the immediate
+              request and is never used to train public AI models.
             </p>
           </PolicySubSection>
         </PolicySection>
@@ -134,59 +133,143 @@ export default function PrivacyContent() {
           number="4"
           title="Data Storage, Security & Proprietary Infrastructure"
         >
-          <PolicySubSection title="4.1 Custom-Coded Infrastructure & Security">
+          <PolicySubSection title="4.1 Australian Data Storage">
             <p>
-              Unlike standard agencies that rely on third-party automation
-              &ldquo;middleware&rdquo; (which increases data vulnerability),
-              Leadwing utilizes a custom-coded, serverless infrastructure. We
-              implement commercially reasonable technical measures, including:
+              All customer and lead data collected through Leadwing is stored on
+              servers located in Sydney, Australia (AWS ap-southeast-2). This
+              ensures all data remains within Australian jurisdiction in
+              compliance with the Privacy Act 1988 (Cth) and the Australian
+              Privacy Principles. Data may only briefly pass through overseas
+              jurisdictions where specific AI model providers operate, as noted
+              in Section 5.
+            </p>
+          </PolicySubSection>
+          <PolicySubSection title="4.2 Data Encryption">
+            <p>
+              All data collected and processed by Leadwing is encrypted both at
+              rest and in transit using industry-standard encryption protocols,
+              including:
             </p>
             <ul className="list-disc space-y-1 pl-5">
               <li>
-                <strong>Encrypted Storage:</strong> All data is stored in
-                secure, relational databases (Supabase) encrypted at rest
-                (AES-256).
+                <strong>At Rest:</strong> AES-256 encryption applied to all
+                stored data within our secure relational database infrastructure
+                (Supabase).
               </li>
               <li>
-                <strong>Secure Transit:</strong> Data is transmitted directly
-                from our core logic engine to the end service provider via
-                encrypted channels (HTTPS/TLS 1.3), minimizing the attack
-                surface.
+                <strong>In Transit:</strong> All data transmission occurs
+                exclusively over encrypted channels using HTTPS/TLS 1.3,
+                minimising exposure and preventing interception.
               </li>
             </ul>
           </PolicySubSection>
-          <PolicySubSection title="4.2 Storage Location">
+          <PolicySubSection title="4.3 Row Level Security">
             <p>
-              Data is primarily stored and processed securely within Australian
-              data centers. However, data may briefly pass through overseas
-              jurisdictions where our specific AI model providers operate.
+              Access to lead data is restricted at the database level using Row
+              Level Security (RLS). Each franchise location or authorised service
+              partner may only access data belonging to their own assigned
+              territory. Cross-territory data access is technically enforced as
+              impossible — no franchisee or location can view, access, or
+              retrieve lead data assigned to another territory under any
+              circumstances.
             </p>
           </PolicySubSection>
-          <PolicySubSection title="4.3 Retention Periods">
-            <ul className="list-disc space-y-2 pl-5">
+          <PolicySubSection title="4.4 Custom-Coded Infrastructure">
+            <p>
+              Unlike standard agencies that rely on third-party automation
+              &ldquo;middleware&rdquo; (which increases data vulnerability),
+              Leadwing utilises a custom-coded, serverless infrastructure. We
+              implement commercially reasonable technical measures, including
+              encrypted storage and secure transit as described above, minimising
+              the attack surface and reducing dependency on fragile third-party
+              tools.
+            </p>
+          </PolicySubSection>
+          <PolicySubSection title="4.5 API Security">
+            <p>
+              All API connections used within Leadwing&apos;s infrastructure are
+              secured as follows:
+            </p>
+            <ul className="list-disc space-y-1 pl-5">
               <li>
-                <strong>End-Customer Enquiry Data:</strong> Data is retained
-                securely within our database to facilitate lead delivery,
-                verify routing accuracy, and generate aggregated performance
-                analytics for the Client&apos;s Head Office. Data is retained
-                only as long as necessary for these operational requirements or
-                until the Client requests its deletion.
+                All API keys and sensitive credentials are stored as encrypted
+                environment variables.
               </li>
               <li>
-                <strong>Client Business Data:</strong> Retained for the
-                duration of the Client relationship plus 7 years for legal and
+                No sensitive credentials, API keys, or tokens are hardcoded
+                within application code or publicly accessible repositories.
+              </li>
+              <li>
+                Access to API endpoints is restricted and authenticated, and all
+                communications are encrypted in transit per Section 4.2.
+              </li>
+            </ul>
+          </PolicySubSection>
+          <PolicySubSection title="4.6 Audit Trail">
+            <p>
+              All lead interactions processed through Leadwing&apos;s
+              infrastructure are logged with full timestamps, creating a
+              comprehensive audit trail. This audit log records the date, time,
+              and nature of each lead interaction and routing event. The complete
+              audit trail is maintained securely and is available to the network
+              operator (Client Head Office) upon request.
+            </p>
+          </PolicySubSection>
+        </PolicySection>
+
+        <PolicySection
+          number="5"
+          title="Data Retention & Third-Party Sharing"
+        >
+          <PolicySubSection title="5.1 Data Retention">
+            <p>
+              Leadwing applies the following data retention periods:
+            </p>
+            <ul className="list-disc space-y-2 pl-5">
+              <li>
+                <strong>End-Customer Lead Data:</strong> Customer lead data is
+                retained for ninety (90) days from the date of collection, after
+                which it is permanently and irreversibly deleted from our
+                systems, unless a longer retention period has been expressly
+                agreed in writing between Leadwing and the Client.
+              </li>
+              <li>
+                <strong>Client Business Data:</strong> Retained for the duration
+                of the Client relationship plus seven (7) years for legal and
                 accounting purposes.
               </li>
             </ul>
           </PolicySubSection>
-        </PolicySection>
-
-        <PolicySection number="5" title="Third-Party Service Providers">
-          <PolicySubSection title="5.1 Providers We Use">
+          <PolicySubSection title="5.2 No Third-Party Sharing">
             <p>
-              Leadwing deliberately bypasses fragile third-party automation
-              tools to protect your data. We only utilize enterprise-grade
-              infrastructure, including:
+              Lead data collected through Leadwing is never sold, shared, or
+              distributed to any third party outside of the Client&apos;s own
+              franchise or service network. Specifically:
+            </p>
+            <ul className="list-disc space-y-1 pl-5">
+              <li>
+                Lead data is used solely for the purpose of lead routing and
+                reporting within the Client&apos;s franchise or multi-location
+                network.
+              </li>
+              <li>
+                Leadwing does not sell, trade, or transfer End-Customer data to
+                external parties for any commercial, marketing, or other
+                purpose.
+              </li>
+              <li>
+                Data is shared only with the specific, authorised franchisee or
+                service partner responsible for the relevant geographic
+                territory, as directed by the Client Head Office.
+              </li>
+            </ul>
+          </PolicySubSection>
+          <PolicySubSection title="5.3 Third-Party Service Providers (Infrastructure Only)">
+            <p>
+              Leadwing deliberately bypasses fragile third-party automation tools
+              to protect your data. We only utilise enterprise-grade
+              infrastructure providers strictly necessary for service delivery,
+              including:
             </p>
             <ul className="list-disc space-y-1 pl-5">
               <li>
@@ -194,17 +277,22 @@ export default function PrivacyContent() {
                 Voiceflow).
               </li>
               <li>
-                Secure Database and Cloud hosting (e.g., Supabase, AWS, Google
-                Cloud).
+                Secure database and cloud hosting (e.g., Supabase, AWS
+                ap-southeast-2).
               </li>
               <li>Direct API SMS/Email communication gateways.</li>
             </ul>
-          </PolicySubSection>
-          <PolicySubSection title="5.2 Overseas Disclosure">
             <p>
-              By using the Services, you acknowledge that data may be
-              processed by the above enterprise providers in the United States
-              and other jurisdictions to facilitate the AI logic.
+              These providers are used solely for infrastructure purposes and are
+              not permitted to use your data for their own commercial purposes.
+            </p>
+          </PolicySubSection>
+          <PolicySubSection title="5.4 Overseas Disclosure">
+            <p>
+              By using the Services, you acknowledge that data may be briefly
+              processed by AI model providers operating in the United States and
+              other jurisdictions to facilitate AI logic, as described in Section
+              4.1. All other data storage and processing occurs within Australia.
             </p>
           </PolicySubSection>
         </PolicySection>
@@ -296,7 +384,7 @@ export default function PrivacyContent() {
 function PolicySection({
   number,
   title,
-  children
+  children,
 }: {
   number: string;
   title: string;
@@ -314,7 +402,7 @@ function PolicySection({
 
 function PolicySubSection({
   title,
-  children
+  children,
 }: {
   title: string;
   children: React.ReactNode;
