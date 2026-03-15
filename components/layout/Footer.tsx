@@ -14,8 +14,7 @@ export default function Footer() {
         <div className="space-y-3">
           <p className="text-lg font-extrabold text-white">Leadwing</p>
           <p className="text-sm">
-            Lead infrastructure for franchise networks. Every lead captured,
-            qualified, and routed — before your competitors even pick up.
+            Lead Infrastructure for Trade Networks
           </p>
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Leadwing. All rights reserved.

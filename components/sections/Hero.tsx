@@ -9,13 +9,13 @@ export default function Hero() {
     <AnimatedSection className="bg-gradient-to-br from-navy via-navy/95 to-brandBlue/20 text-white">
       <Container className="flex flex-col items-center text-center">
         <p className="animate-on-scroll text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
-          Network-Wide Lead Infrastructure&nbsp;&nbsp;·&nbsp;&nbsp;AU &amp; NZ
+          Lead Infrastructure&nbsp;&nbsp;·&nbsp;&nbsp;Trade Networks
         </p>
 
         <h1 className="animate-on-scroll stagger-1 mt-6 max-w-4xl text-balance text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl">
-          Your franchisees are losing jobs{" "}
+          Your trade network is losing jobs{" "}
           <span className="italic text-brandOrange">
-            between Friday and Monday.
+            after hours.
           </span>
         </h1>
 

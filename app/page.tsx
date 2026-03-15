@@ -7,13 +7,13 @@ import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import EnterpriseSection from "@/components/sections/EnterpriseSection";
 
 export const metadata: Metadata = {
-  title: "Leadwing | Lead Infrastructure for Franchise Networks",
+  title: "Leadwing | Lead Infrastructure for Trade Networks",
   description:
-    "Leadwing closes the Response Gap across your franchise network. Every lead captured, qualified, and routed in under 90 seconds. 24/7.",
+    "Lead infrastructure for trade networks losing jobs after hours. Every lead captured, qualified, and routed in under 90 seconds. 24/7.",
   openGraph: {
     title: "Leadwing",
     description:
-      "Lead infrastructure for franchise networks. Every lead. Every location. Responded to in under 90 seconds.",
+      "Lead infrastructure for trade networks losing jobs after hours. Every lead. Every location. Responded to in under 90 seconds.",
     type: "website",
   },
 };
